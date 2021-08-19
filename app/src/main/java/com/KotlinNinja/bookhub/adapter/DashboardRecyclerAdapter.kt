@@ -23,6 +23,7 @@ class DashboardRecyclerAdapter(val context: Context, val itemList: ArrayList<Boo
         return DashboardViewHolder(view)
     }//A ViewHolder is responsible for creating the Views for each row item of the RecyclerView.
 
+
     override fun getItemCount(): Int {
         return itemList.size
     }
@@ -36,6 +37,7 @@ class DashboardRecyclerAdapter(val context: Context, val itemList: ArrayList<Boo
         //    holder.imgBookImage.setImageResource(book.bookImage)  //image is put by this mathod
         Picasso.get().load(book.bookImage).error(R.drawable.default_book_cover)
             .into(holder.imgBookImage)
+
         //Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(imageView);
         //Picasso may not load correctly use (error() ) for default images
 
@@ -54,6 +56,7 @@ class DashboardRecyclerAdapter(val context: Context, val itemList: ArrayList<Boo
 
     }       //setBackgroundResource() is also used for background image
 
+
     class DashboardViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val txtBookName: TextView = view.findViewById(R.id.txtBookName)
         val txtBookAuthor: TextView = view.findViewById(R.id.txtBookAuthor)
@@ -61,6 +64,8 @@ class DashboardRecyclerAdapter(val context: Context, val itemList: ArrayList<Boo
         val txtBookRating: TextView = view.findViewById(R.id.txtBookRating)
         val imgBookImage: ImageView = view.findViewById(R.id.imgBookImage)
         val llContent: LinearLayout = view.findViewById(R.id.llContent)
-    }//if total 15 items then - Since the screen can only display 6 items, the RecyclerView creates 6 new ViewHolder while the others
+    }
+
+    //if total 15 items then - Since the screen can only display 6 items, the RecyclerView creates 6 new ViewHolder while the others
     // are recycled using the onBindViewHolder() method. Therefore, out of total 15, 9 are recycled.
 }
