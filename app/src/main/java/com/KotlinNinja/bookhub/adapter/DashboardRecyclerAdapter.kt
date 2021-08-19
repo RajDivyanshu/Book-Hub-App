@@ -22,7 +22,7 @@ class DashboardRecyclerAdapter(val context: Context, val itemList: ArrayList<Boo
             .inflate(R.layout.recycler_dashboard_single_row, parent, false)
         return DashboardViewHolder(view)
     }//A ViewHolder is responsible for creating the Views for each row item of the RecyclerView.
-
+//A ViewHolder is responsible for creating the Views for each row item of the RecyclerView.
 
     override fun getItemCount(): Int {
         return itemList.size
