@@ -18,11 +18,7 @@ import com.KotlinNinja.bookhub.databse.BookDatabase
 import com.KotlinNinja.bookhub.databse.BookEntity
 
 
- /**
- * A simple [Fragment] subclass.
- * Use the [FavouritesFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class FavouritesFragment : Fragment() {
     lateinit var recyclerFavourites:RecyclerView
     lateinit var progressLayout:RelativeLayout

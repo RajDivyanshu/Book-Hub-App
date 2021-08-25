@@ -40,6 +40,9 @@ class DashboardRecyclerAdapter(val context: Context, val itemList: ArrayList<Boo
 
         //Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(imageView);
         //Picasso may not load correctly use (error() ) for default images
+        //Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(imageView);
+        //Picasso may not load correctly use (error() ) for default images
+
 
         holder.llContent.setOnClickListener {
             val intent = Intent(context, DescriptionActivity::class.java)  // context - fragment activity
