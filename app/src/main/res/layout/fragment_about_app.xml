@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".fragment.AboutAppFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -30,5 +30,39 @@
         android:text="version 1.0"
         android:textColor="#191919"
         android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="20dp"
+        android:background="#393737"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Developed By: Divyanshu Rajput"
+        android:textColor="#373737"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/linkedinLink"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:src="@drawable/linkedin_icon" />
+
+        <ImageView
+            android:id="@+id/githubLink"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:src="@drawable/github_icon" />
+    </LinearLayout>
 
 </LinearLayout>
